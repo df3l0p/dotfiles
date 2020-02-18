@@ -51,43 +51,52 @@ set ignorecase
 
 " Use the OS clipboard by default (on versions compiled with `+clipboard`)
 set clipboard=unnamed
-" Enhance command-line completion
-set wildmenu
-" Allow cursor keys in insert mode
-set esckeys
-" Optimize for fast terminal connections
-set ttyfast
-" Use UTF-8 without BOM
-set encoding=utf-8 nobomb
-" Respect modeline in files
-set modeline
-set modelines=4
-" Highlight current line
-set cursorline
+
 " Make tabs as wide as two spaces
 set tabstop=2
-" Show “invisible” characters
-set lcs=tab:▸\ ,trail:·,nbsp:_
-set list
-" Highlight searches
-set hlsearch
-" Ignore case of searches
-set ignorecase
-" Highlight dynamically as pattern is typed
-set incsearch
-" Show the current mode
-set showmode
-" Show the filename in the window titlebar
-set title
-" Show the (partial) command as it’s being typed
-set showcmd
 
-" Automatic commands
-if has("autocmd")
-    " Enable file type detection
-    filetype on
-    " Treat .json files as .js
-    autocmd BufNewFile,BufRead *.json setfiletype json syntax=javascript
-    " Treat .md files as Markdown
-    autocmd BufNewFile,BufRead *.md setlocal filetype=markdown
-endif
+"" Respect modeline in files
+set modeline
+set modelines=4
+
+
+" Enhance command-line completion
+"set wildmenu
+"" Allow cursor keys in insert mode
+"set esckeys
+"" Optimize for fast terminal connections
+"set ttyfast
+"" Use UTF-8 without BOM
+"set encoding=utf-8 nobomb
+"" Respect modeline in files
+"set modeline
+"set modelines=4
+"" Highlight current line
+"set cursorline
+"" Make tabs as wide as two spaces
+"set tabstop=2
+"" Show “invisible” characters
+"" set lcs=tab:▸\ ,trail:·,nbsp:_
+"set list
+"" Highlight searches
+"set hlsearch
+"" Ignore case of searches
+"set ignorecase
+"" Highlight dynamically as pattern is typed
+"set incsearch
+"" Show the current mode
+"set showmode
+"" Show the filename in the window titlebar
+"set title
+"" Show the (partial) command as it’s being typed
+"set showcmd
+"
+"" Automatic commands
+"if has("autocmd")
+"    " Enable file type detection
+"    filetype on
+"    " Treat .json files as .js
+"    autocmd BufNewFile,BufRead *.json setfiletype json syntax=javascript
+"    " Treat .md files as Markdown
+"    autocmd BufNewFile,BufRead *.md setlocal filetype=markdown
+"endif
