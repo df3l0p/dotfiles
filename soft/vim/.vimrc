@@ -52,8 +52,12 @@ set ignorecase
 " Use the OS clipboard by default (on versions compiled with `+clipboard`)
 set clipboard=unnamed
 
-" Make tabs as wide as two spaces
-set tabstop=2
+" Make tabs as wide as n spaces
+set tabstop=4
+set shiftwidth=4
+
+" Insert space when using tab
+set expandtab
 
 "" Respect modeline in files
 set modeline
